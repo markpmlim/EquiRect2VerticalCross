@@ -14,7 +14,7 @@ Referring to the Rendermann specifications:
 <br />
 <br />
 
-to access one of the six 2D textures of the cubemap, we need to form a 3D vector. So, if we know the face of the cubemap to be accessed, we can just setup the vector using the Lookup table above as a guide.
+to access one of the six 2D textures of the cubemap, we need to form a 3D vector. So, if we know which face of the cubemap is to be accessed, we can just setup the vector using the Lookup table above as a guide.
 
 As an example, if we want to access the pixels of the **+X** face, the 3D vector should be:
 
@@ -51,7 +51,11 @@ We have chosen the time-tested method by mapping a pixel of the output image to 
 **Further Observations**
 <br />
 
-There is now enough information to write a bare-bones Cubemap Generator. The best input format may be an EquiRectangular Projection map.
+a) To save the generated cross cubemap, perform an offscreen rendering to a texture. Once the texture is available, certain methods of macOS' CIImage and CGImage classes can be used. (Refer to the *Cubemap2EquiRect* demo of the *MetalCubemapping* Project.)
+
+b) Texturing a sphere is similar to texturing a cube since a 3D vector from the centre of the sphere to a point on its surface can be expressed in spherical coordinates.
+
+c) There is now enough information to write a bare-bones Cubemap Generator. The best input format may be an EquiRectangular Projection map.
 
 <br />
 <br />
