@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE32683D283656E900A2885A /* EquiRectImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EE822BDD2835DF63003736EA /* EquiRectImage.png */; };
+		EE35FD352835E65700376A81 /* EquiRectImage.hdr in Resources */ = {isa = PBXBuildFile; fileRef = EE822BE72835DF73003736EA /* EquiRectImage.hdr */; };
+		EE822BF62835E04D003736EA /* EquiRectImage.png in Resources */ = {isa = PBXBuildFile; fileRef = EE822BDD2835DF63003736EA /* EquiRectImage.png */; };
+		EE822BF72835E1AD003736EA /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC774792835A5CB00CEE656 /* AAPLMathUtilities.m */; };
+		EE822BF82835E1BD003736EA /* MTKTextureLoader+HDR.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7747D2835A5CB00CEE656 /* MTKTextureLoader+HDR.m */; };
+		EE9C72F12877A04A003A0ED7 /* EquiRectImage.hdr in Resources */ = {isa = PBXBuildFile; fileRef = EE822BE72835DF73003736EA /* EquiRectImage.hdr */; };
+		EE9E82852835E92200F011F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9E82842835E92200F011F4 /* AppDelegate.swift */; };
+		EE9E828A2835E92200F011F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E82882835E92200F011F4 /* Main.storyboard */; };
+		EE9E828C2835E92300F011F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE9E828B2835E92300F011F4 /* Assets.xcassets */; };
+		EE9E828F2835E92300F011F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9E828D2835E92300F011F4 /* LaunchScreen.storyboard */; };
+		EE9E82B52835F9AA00F011F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDACFE2835A40600ECF4C0 /* ViewController.swift */; };
+		EE9E82B62835F9AB00F011F4 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC774862835BA6300CEE656 /* Renderer.swift */; };
+		EE9E82B72835F9AF00F011F4 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EEC774872835BA6400CEE656 /* Shaders.metal */; };
+		EE9E82B82835F9CF00F011F4 /* AAPLMathUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC774792835A5CB00CEE656 /* AAPLMathUtilities.m */; };
+		EE9E82B92835F9D200F011F4 /* MTKTextureLoader+HDR.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC7747D2835A5CB00CEE656 /* MTKTextureLoader+HDR.m */; };
+		EEBDACFD2835A40600ECF4C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDACFC2835A40600ECF4C0 /* AppDelegate.swift */; };
+		EEBDACFF2835A40600ECF4C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBDACFE2835A40600ECF4C0 /* ViewController.swift */; };
+		EEBDAD012835A40600ECF4C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEBDAD002835A40600ECF4C0 /* Assets.xcassets */; };
+		EEBDAD042835A40600ECF4C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEBDAD022835A40600ECF4C0 /* Main.storyboard */; };
+		EEC774892835BA6400CEE656 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC774862835BA6300CEE656 /* Renderer.swift */; };
+		EEC7748A2835BA6400CEE656 /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = EEC774872835BA6400CEE656 /* Shaders.metal */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE822BDD2835DF63003736EA /* EquiRectImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EquiRectImage.png; sourceTree = "<group>"; };
+		EE822BE72835DF73003736EA /* EquiRectImage.hdr */ = {isa = PBXFileReference; lastKnownFileType = file; path = EquiRectImage.hdr; sourceTree = "<group>"; };
+		EE9E82822835E92200F011F4 /* VerticalCross-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VerticalCross-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9E82842835E92200F011F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE9E82892835E92200F011F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE9E828B2835E92300F011F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE9E828E2835E92300F011F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE9E82902835E92300F011F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEBDACFA2835A40600ECF4C0 /* VerticalCross-macOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VerticalCross-macOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBDACFC2835A40600ECF4C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEBDACFE2835A40600ECF4C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEBDAD002835A40600ECF4C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEBDAD032835A40600ECF4C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEBDAD052835A40600ECF4C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEC010F72836690D00F5D915 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; wrapsLines = 1; };
+		EEC774792835A5CB00CEE656 /* AAPLMathUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AAPLMathUtilities.m; sourceTree = "<group>"; };
+		EEC7747A2835A5CB00CEE656 /* AAPLMathUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AAPLMathUtilities.h; sourceTree = "<group>"; };
+		EEC7747B2835A5CB00CEE656 /* stb_image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = stb_image.h; sourceTree = "<group>"; };
+		EEC7747D2835A5CB00CEE656 /* MTKTextureLoader+HDR.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MTKTextureLoader+HDR.m"; sourceTree = "<group>"; };
+		EEC7747F2835A5CB00CEE656 /* MTKTextureLoader+HDR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTKTextureLoader+HDR.h"; sourceTree = "<group>"; };
+		EEC774862835BA6300CEE656 /* Renderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		EEC774872835BA6400CEE656 /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		EEC774882835BA6400CEE656 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE9E827F2835E92200F011F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBDACF72835A40600ECF4C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE822BD92835DF03003736EA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EE822BDA2835DF23003736EA /* HDR */,
+				EE822BDB2835DF2D003736EA /* PNG */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EE822BDA2835DF23003736EA /* HDR */ = {
+			isa = PBXGroup;
+			children = (
+				EE822BE72835DF73003736EA /* EquiRectImage.hdr */,
+			);
+			path = HDR;
+			sourceTree = "<group>";
+		};
+		EE822BDB2835DF2D003736EA /* PNG */ = {
+			isa = PBXGroup;
+			children = (
+				EE822BDD2835DF63003736EA /* EquiRectImage.png */,
+			);
+			path = PNG;
+			sourceTree = "<group>";
+		};
+		EE9E82B22835F6EB00F011F4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EEC774862835BA6300CEE656 /* Renderer.swift */,
+				EEBDACFE2835A40600ECF4C0 /* ViewController.swift */,
+				EEC774872835BA6400CEE656 /* Shaders.metal */,
+				EEC774882835BA6400CEE656 /* Bridging-Header.h */,
+				EE9E82B32835F6F600F011F4 /* iOS */,
+				EE9E82B42835F6FE00F011F4 /* macOS */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EE9E82B32835F6F600F011F4 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EE9E82842835E92200F011F4 /* AppDelegate.swift */,
+				EE9E828B2835E92300F011F4 /* Assets.xcassets */,
+				EE9E82882835E92200F011F4 /* Main.storyboard */,
+				EE9E828D2835E92300F011F4 /* LaunchScreen.storyboard */,
+				EE9E82902835E92300F011F4 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		EE9E82B42835F6FE00F011F4 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				EEBDAD022835A40600ECF4C0 /* Main.storyboard */,
+				EEBDACFC2835A40600ECF4C0 /* AppDelegate.swift */,
+				EEBDAD002835A40600ECF4C0 /* Assets.xcassets */,
+				EEBDAD052835A40600ECF4C0 /* Info.plist */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		EEBDACC32835A2EB00ECF4C0 = {
+			isa = PBXGroup;
+			children = (
+				EEC010F72836690D00F5D915 /* Readme.md */,
+				EEC774772835A5A300CEE656 /* Common */,
+				EE822BD92835DF03003736EA /* Images */,
+				EEBDACFB2835A40600ECF4C0 /* VerticalCross */,
+				EEBDACCD2835A2EB00ECF4C0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEBDACCD2835A2EB00ECF4C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEBDACFA2835A40600ECF4C0 /* VerticalCross-macOS.app */,
+				EE9E82822835E92200F011F4 /* VerticalCross-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEBDACFB2835A40600ECF4C0 /* VerticalCross */ = {
+			isa = PBXGroup;
+			children = (
+				EE9E82B22835F6EB00F011F4 /* Application */,
+			);
+			path = VerticalCross;
+			sourceTree = "<group>";
+		};
+		EEC774772835A5A300CEE656 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EEC7747A2835A5CB00CEE656 /* AAPLMathUtilities.h */,
+				EEC774792835A5CB00CEE656 /* AAPLMathUtilities.m */,
+				EEC7747F2835A5CB00CEE656 /* MTKTextureLoader+HDR.h */,
+				EEC7747D2835A5CB00CEE656 /* MTKTextureLoader+HDR.m */,
+				EEC7747B2835A5CB00CEE656 /* stb_image.h */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE9E82812835E92200F011F4 /* VerticalCross-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE9E82912835E92300F011F4 /* Build configuration list for PBXNativeTarget "VerticalCross-iOS" */;
+			buildPhases = (
+				EE9E827E2835E92200F011F4 /* Sources */,
+				EE9E827F2835E92200F011F4 /* Frameworks */,
+				EE9E82802835E92200F011F4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VerticalCross-iOS";
+			productName = "Texture2D-iOS";
+			productReference = EE9E82822835E92200F011F4 /* VerticalCross-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEBDACF92835A40600ECF4C0 /* VerticalCross-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEBDAD062835A40600ECF4C0 /* Build configuration list for PBXNativeTarget "VerticalCross-macOS" */;
+			buildPhases = (
+				EEBDACF62835A40600ECF4C0 /* Sources */,
+				EEBDACF72835A40600ECF4C0 /* Frameworks */,
+				EEBDACF82835A40600ECF4C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VerticalCross-macOS";
+			productName = Texture2D;
+			productReference = EEBDACFA2835A40600ECF4C0 /* VerticalCross-macOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEBDACC42835A2EB00ECF4C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "mark lim pak mun";
+				TargetAttributes = {
+					EE9E82812835E92200F011F4 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
+					EEBDACF92835A40600ECF4C0 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EEBDACC72835A2EB00ECF4C0 /* Build configuration list for PBXProject "EquiRect2Crossmaps" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = EEBDACC32835A2EB00ECF4C0;
+			productRefGroup = EEBDACCD2835A2EB00ECF4C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE9E82812835E92200F011F4 /* VerticalCross-iOS */,
+				EEBDACF92835A40600ECF4C0 /* VerticalCross-macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE9E82802835E92200F011F4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9C72F12877A04A003A0ED7 /* EquiRectImage.hdr in Resources */,
+				EE32683D283656E900A2885A /* EquiRectImage.png in Resources */,
+				EE9E828F2835E92300F011F4 /* LaunchScreen.storyboard in Resources */,
+				EE9E828A2835E92200F011F4 /* Main.storyboard in Resources */,
+				EE9E828C2835E92300F011F4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBDACF82835A40600ECF4C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBDAD012835A40600ECF4C0 /* Assets.xcassets in Resources */,
+				EEBDAD042835A40600ECF4C0 /* Main.storyboard in Resources */,
+				EE35FD352835E65700376A81 /* EquiRectImage.hdr in Resources */,
+				EE822BF62835E04D003736EA /* EquiRectImage.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE9E827E2835E92200F011F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE9E82852835E92200F011F4 /* AppDelegate.swift in Sources */,
+				EE9E82B52835F9AA00F011F4 /* ViewController.swift in Sources */,
+				EE9E82B62835F9AB00F011F4 /* Renderer.swift in Sources */,
+				EE9E82B72835F9AF00F011F4 /* Shaders.metal in Sources */,
+				EE9E82B82835F9CF00F011F4 /* AAPLMathUtilities.m in Sources */,
+				EE9E82B92835F9D200F011F4 /* MTKTextureLoader+HDR.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEBDACF62835A40600ECF4C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEBDACFD2835A40600ECF4C0 /* AppDelegate.swift in Sources */,
+				EEC774892835BA6400CEE656 /* Renderer.swift in Sources */,
+				EEBDACFF2835A40600ECF4C0 /* ViewController.swift in Sources */,
+				EEC7748A2835BA6400CEE656 /* Shaders.metal in Sources */,
+				EE822BF72835E1AD003736EA /* AAPLMathUtilities.m in Sources */,
+				EE822BF82835E1BD003736EA /* MTKTextureLoader+HDR.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EE9E82882835E92200F011F4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9E82892835E92200F011F4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE9E828D2835E92300F011F4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE9E828E2835E92300F011F4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EEBDAD022835A40600ECF4C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEBDAD032835A40600ECF4C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE9E82922835E92300F011F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = VerticalCross/Application/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.VerticalCross-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "VerticalCross/Application/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE9E82932835E92300F011F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = VerticalCross/Application/iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Incremental-Innovation.VerticalCross-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "VerticalCross/Application/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEBDACD92835A2EC00ECF4C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEBDACDA2835A2EC00ECF4C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		EEBDAD072835A40600ECF4C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				INFOPLIST_FILE = VerticalCross/Application/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.incrementalinnovation.VerticalCross;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VerticalCross/Application/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EEBDAD082835A40600ECF4C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				INFOPLIST_FILE = VerticalCross/Application/macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.incrementalinnovation.VerticalCross;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VerticalCross/Application/Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE9E82912835E92300F011F4 /* Build configuration list for PBXNativeTarget "VerticalCross-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE9E82922835E92300F011F4 /* Debug */,
+				EE9E82932835E92300F011F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEBDACC72835A2EB00ECF4C0 /* Build configuration list for PBXProject "EquiRect2Crossmaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBDACD92835A2EC00ECF4C0 /* Debug */,
+				EEBDACDA2835A2EC00ECF4C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEBDAD062835A40600ECF4C0 /* Build configuration list for PBXNativeTarget "VerticalCross-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEBDAD072835A40600ECF4C0 /* Debug */,
+				EEBDAD082835A40600ECF4C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEBDACC42835A2EB00ECF4C0 /* Project object */;
+}
