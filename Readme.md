@@ -2,9 +2,8 @@
 
 <br />
 <br />
-<br />
 
-Instead of converting an EquiRectangular projection of a scene to a cubemap texture make up of six 2D textures, we explore the possibilty of directly rendering a vertical crossmap cubemap texture from a 2:1 EquiRectangular image.
+Instead of converting an EquiRectangular projection of a scene to a cubemap texture make up of six 2D textures, we explore the possibilty of directly rendering a vertical crossmap cubemap texture from the 2:1 EquiRectangular texture.
 
 Since a vertical cross cubemap can be rendered from an ordinary (six 2D) cubemap texture, we can use the idea of deriving a pair of texture coordinates for a given face.
 
@@ -15,35 +14,47 @@ Referring to the Rendermann specifications:
 <br />
 <br />
 
-to access one of the six 2D textures of the cubemap, we formulate a 3D vector. So, if we know the face, we just setup the vector using the Lookup table above as a guide.
+to access one of the six 2D textures of the cubemap, we need to form a 3D vector. So, if we know the face of the cubemap to be accessed, we can just setup the vector using the Lookup table above as a guide.
 
-As an example, when we want to access the pixels of the **+X** face, the 3D vector should be:
+As an example, if we want to access the pixels of the **+X** face, the 3D vector should be:
 
 ```metal
 
-    float3 vector = float3(1.0, -tc, -sc);
+    float3 direction = float3(1.0, -tc, -sc);
     
 ```
 
-where sc and tc are texture coordinates that are mapped to the texture coordinates of a pixel of the corresponding face of the 2D Vertical Cross cubemap. If you read Paul Reed's article, you use any mapping scheme (cf **Cubemap Layout**). The 2 important things to note is:
+where sc and tc are texture coordinates that are mapped to the texture coordinates of a pixel of the corresponding face of the 2D Vertical Cross cubemap. If you read Paul Reed's article, you use any mapping scheme (cf **Cubemap Layout** section of the webpage). The 2 important things to note is:
 
-a) mapping a pixel's texture coordinates in a particular output cubemap layout (e.g. vertical cross) to a face of a cube, and,
+a) how to map a pixel's texture coordinates in a particular output cubemap layout (e.g. vertical cross) to a face of a cube, and,
 
-b) normalize the 3D vector.
+b) normalization of the 3D direction vector.
 
+<br />
+<br />
 
-We have chosen a time-tested method by mapping a pixel of the output image to a cube of 2 units. The 3D vector must be normalized inside the if branch:
+We have chosen the time-tested method by mapping a pixel of the output image to a cube of 2 units. Note: the 3D vector must be normalized inside the if branch:
 
 ```metal
 
     if (dir.x != 0.0 && dir.y != 0.0) {
         dir = normalize(dir);
-        uv = sampleSphericalMap(dir);
-        out_color = tex.sample(textureSampler, uv);
+        ...
+        ...
     }
 
 ```
 
+<br />
+<br />
+
+**Further Observations**
+<br />
+
+There is now enough information to write a bare-bones Cubemap Generator. The best input format may be an EquiRectangular Projection map.
+
+<br />
+<br />
 
 **Requirements:** 
 <br />
@@ -63,3 +74,4 @@ https://cgvr.cs.uni-bremen.de/teaching/cg_literatur/Cube_map_tutorial/cube_map.h
 http://paul-reed.co.uk/programming.html
 
 
+https://gpuopen.com/archived/cubemapgen/
