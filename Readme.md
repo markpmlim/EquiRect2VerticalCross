@@ -10,6 +10,7 @@ Since a vertical cross cubemap can be rendered from an ordinary (six 2D) cubemap
 
 Referring to the Rendermann specifications:
 
+![screenshot](LookupTable.png)
 
 
 **Requirements:** XCode 9.x, Swift 4.x and macOS 10.13.4 or later.
@@ -19,6 +20,9 @@ Referring to the Rendermann specifications:
 
 
 **Web Links:**
+
+
+https://cgvr.cs.uni-bremen.de/teaching/cg_literatur/Cube_map_tutorial/cube_map.html
 
 
 http://paul-reed.co.uk/programming.html
