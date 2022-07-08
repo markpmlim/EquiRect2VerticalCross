@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  EquiRect2Crossmaps
 //
-//  Created by Mark Lim Pak Mun on 18/05/2022.
+//  Created by Mark Lim Pak Mun on 08/07/2022.
 //  Copyright © 2022 Mark Lim Pak Mun. All rights reserved.
 
 #if os(iOS)
