@@ -60,6 +60,12 @@ c) There is now enough information to write a bare-bones Cubemap Generator. The 
 <br />
 <br />
 
+**Reference**
+
+To perform a render to texture, please refer to Apple's Sample Code: **"Customizing Render Pass Setup"**.
+
+<br />
+
 **Requirements:** 
 <br />
 
