@@ -60,7 +60,7 @@ c) There is now enough information to write a bare-bones Cubemap Generator. The 
 <br />
 <br />
 
-**Reference**
+**Notes:**
 
 To perform a render into an offscreen texture, please refer to Apple's Sample Code: **"Customizing Render Pass Setup"**.
 
